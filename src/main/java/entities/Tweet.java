@@ -25,4 +25,9 @@ public class Tweet {
 
     @ManyToOne
     private User user;
+
+    public Tweet(String text, User user) {
+        this.text = text;
+        this.user = user;
+    }
 }
